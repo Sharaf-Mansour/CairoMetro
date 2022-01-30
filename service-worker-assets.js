@@ -5,11 +5,11 @@
       "url": "_framework\/blazor.webassembly.js"
     },
     {
-      "hash": "sha256-JOkLz6bmKTjclKe9tVm6e9\/WKm52m4eXtAoD8Ieh4jM=",
+      "hash": "sha256-3e0AskrU1eLCI3GCCbFEawbad04ObaKDK4PDTib82aA=",
       "url": "_framework\/blazor.boot.json"
     },
     {
-      "hash": "sha256-VfoZwqQzuAUr09qN0IO7S2kOnlz1aYlTxw5\/zKO2p7c=",
+      "hash": "sha256-O59l1GmHIL0brPtpLTn9HYa9NkhR2BtIJS8Os74oZXA=",
       "url": "_framework\/CairoMetro.dll"
     },
     {
@@ -113,11 +113,11 @@
       "url": "_framework\/System.Text.Json.dll"
     },
     {
-      "hash": "sha256-oeJ8Fc+cBE7vaVFFQqmnwCL0wrrAbMGrdVFRRPNSjD0=",
+      "hash": "sha256-C3LRebbkf4d+fTMoh2k9KgB1Vo+mm17ju0EOUaaxoDo=",
       "url": "_framework\/dotnet.6.0.1.2n3hd1in0o.js"
     },
     {
-      "hash": "sha256-tO9AAcFfUayPYTQfEBI1Z5Yp+1kjw1krhWHVPzqDjZs=",
+      "hash": "sha256-12Gz6Qx1rfye5VN7gKhhZ2+IvJi8CKU6FGm1TcqM2L0=",
       "url": "_framework\/dotnet.wasm"
     },
     {
@@ -201,5 +201,5 @@
       "url": "UpdatedMetroMap.png"
     }
   ],
-  "version": "pAsvQ3oT"
+  "version": "Xb5HCb4q"
 };
