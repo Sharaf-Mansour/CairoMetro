@@ -1,0 +1,74 @@
+﻿.look__hotspot {
+    width: 25px;
+    height: 25px;
+    display: block;
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 50%;
+    box-sizing: border-box;
+    border: 5px solid white;
+    /* outer */
+    /* hit area */
+}
+
+
+
+    .look__hotspot::before {
+        content: "";
+        display: block;
+        box-sizing: border-box;
+        border: 13px solid rgba(0, 0, 0, 0.2);
+        border-radius: 50%;
+        width: 50px;
+        height: 50px;
+        position: absolute;
+        box-shadow: 0 0 15px 0 rgba(0, 0, 0, 0.2);
+        top: 50%;
+        left: 50%;
+        margin-left: -25px;
+        margin-top: -25px;
+        transition: border 0.2s ease-out;
+        transition-delay: 0.2s;
+    }
+
+    .look__hotspot::after {
+        content: "";
+        display: block;
+        box-sizing: border-box;
+        border: 7px solid rgba(0, 0, 0, 0.1);
+        border-radius: 50%;
+        width: 50px;
+        height: 50px;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        margin-left: -25px;
+        margin-top: -25px;
+    }
+/** * ignore this below, this is just setup */
+body {
+    background: #f1f1f1;
+    padding: 10px;
+}
+
+
+.image-container {
+    position: relative;
+    display: inline-block;
+}
+
+.absolute-possitioned {
+    position: absolute;
+    z-index: 1;
+}
+
+.green:before {
+    border-color: green;
+}
+
+.red:before {
+    border-color: red;
+}
+
+.blue:before {
+    border-color: blue;
+}

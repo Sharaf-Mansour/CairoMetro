@@ -1,9 +1,66 @@
 ﻿@page "/"
 
-<PageTitle>Index</PageTitle>
+<div class="image-container">
+    <img src="Updated Metro Map.png" alt="" class="look">
+    @foreach (var item in Loaders.Map)
+    {
+        int Count = 0;
+        @if (CurrentStatin is not null)
+        {
+            @if (CurrentStatin.Line == item.Line)
+            {
+                Count = Math.Abs(CurrentStatin.ID - item.ID);
+            }
+            @if (CurrentStatin.Line is Line.Line1 && item.Line is Line.Line2 || item.Line is Line.Line1 && CurrentStatin.Line is Line.Line2)
+            {
+                int switcher = CurrentStatin.ID >= 21 ? 22 : 19;
+                int Count1 = Math.Abs(CurrentStatin.ID - switcher);
+                int Count2 = Math.Abs(item.ID - switcher);
+                Count = Count1 + Count2;
+            }
+            @if (CurrentStatin.Line is Line.Line3 && item.Line is Line.Line2 || item.Line is Line.Line3 && CurrentStatin.Line is Line.Line2)
+            {
+                int switcher = 21;
+                int Count1 = Math.Abs(CurrentStatin.ID - switcher);
+                int Count2 = Math.Abs(item.ID - switcher);
+                Count = Count1 + Count2;
+            }
 
-<h1>Hello, world!</h1>
+            @if (CurrentStatin.Line is Line.Line3 && item.Line is Line.Line1 || item.Line is Line.Line3 && CurrentStatin.Line is Line.Line1)
+            {
+                int switcher1 = CurrentStatin.Line is Line.Line1 ?
+                CurrentStatin.ID >= 21 ? 22 : 19
+                : item.ID >= 21 ? 22 : 19;
+                int switcher2 = 21;
 
-Welcome to your new app.
+                int SwitchCount = Math.Abs(switcher2 - switcher1);
 
-<SurveyPrompt Title="How is Blazor working for you?" />
+                int Count1 = CurrentStatin.Line is Line.Line1 ?
+                Math.Abs(CurrentStatin.ID - switcher1)
+                : Math.Abs(CurrentStatin.ID - switcher2);
+
+                int Count2 = CurrentStatin.Line is Line.Line1 ?
+                Math.Abs(item.ID - switcher2)
+                : Math.Abs(item.ID - switcher1);
+                Count = Count1 + Count2 + SwitchCount;
+            }
+
+
+            <button @onclick="()=> Click(item)" type="button" class="look__hotspot absolute-possitioned @(Count < 10 ? "green" : Count < 17 ?  "red" : "blue" )" style="@item.Style" @onmouseover="(MouseEventArgs e) => MouseOver(e,item)" @onmouseout="MouseOut"></button>
+        }
+        else
+        {
+            <button @onclick="()=> Click(item)" type="button" class="look__hotspot absolute-possitioned" style="@item.Style" @onmouseover="(MouseEventArgs e) => MouseOver(e,item)" @onmouseout="MouseOut"></button>
+
+        }
+    }
+</div>
+
+
+@code {
+    Station? CurrentStatin { get; set; }
+    bool clicked = false;
+    void Click(Station item) => (CurrentStatin, clicked) = CurrentStatin != item ? (item, true) : (CurrentStatin, !clicked);
+    void MouseOver(MouseEventArgs e, Station item) => CurrentStatin = clicked ? CurrentStatin : item;
+    void MouseOut(MouseEventArgs e) => CurrentStatin = clicked ? CurrentStatin : null;
+}
