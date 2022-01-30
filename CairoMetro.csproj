@@ -6,7 +6,25 @@
     <ImplicitUsings>enable</ImplicitUsings>
     <ServiceWorkerAssetsManifest>service-worker-assets.js</ServiceWorkerAssetsManifest>
   </PropertyGroup>
-
+<PropertyGroup>
+		<PublishTrimmed>true</PublishTrimmed>
+		<BlazorEnableTimeZoneSupport>false</BlazorEnableTimeZoneSupport>
+		<BlazorWebAssemblyPreserveCollationData>false</BlazorWebAssemblyPreserveCollationData>
+		<InvariantGlobalization>true</InvariantGlobalization>	
+		<UseSystemResourceKeys>true</UseSystemResourceKeys>
+		<UseNativeHttpHandler>true</UseNativeHttpHandler>
+		<MetadataUpdaterSupport>false</MetadataUpdaterSupport>
+		<HttpActivityPropagationSupport>false</HttpActivityPropagationSupport>
+		<EventSourceSupport>false</EventSourceSupport>
+		<EnableUnsafeUTF7Encoding>false</EnableUnsafeUTF7Encoding>
+		<EnableUnsafeBinaryFormatterSerialization>false</EnableUnsafeBinaryFormatterSerialization>
+		<DebuggerSupport>false</DebuggerSupport>
+		<AutoreleasePoolSupport>false</AutoreleasePoolSupport>
+		<ProduceReferenceAssembly>True</ProduceReferenceAssembly>
+		<SignAssembly>False</SignAssembly>
+		<AnalysisLevel>preview</AnalysisLevel>
+		<EnforceCodeStyleInBuild>True</EnforceCodeStyleInBuild>
+	</PropertyGroup>
   <ItemGroup>
     <PackageReference Include="Microsoft.AspNetCore.Components.WebAssembly" Version="6.0.1" />
     <PackageReference Include="Microsoft.AspNetCore.Components.WebAssembly.DevServer" Version="6.0.1" PrivateAssets="all" />
