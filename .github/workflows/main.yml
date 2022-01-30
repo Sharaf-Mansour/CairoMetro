@@ -29,7 +29,7 @@ jobs:
          dotnet-version: '6.0.x'
          include-prerelease: true
       - name: WASM workload install 
-        run:  dotnet workload install microsoft-net-sdk-blazorwebassembly-aot
+        run:  dotnet workload install wasm-tools
 
     # publishes Blazor project to the release-folder
       #- name: Install .NET Core WASM-TOOLS
