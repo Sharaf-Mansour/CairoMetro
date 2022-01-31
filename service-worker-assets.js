@@ -5,11 +5,19 @@
       "url": "_framework\/blazor.webassembly.js"
     },
     {
-      "hash": "sha256-3e0AskrU1eLCI3GCCbFEawbad04ObaKDK4PDTib82aA=",
+      "hash": "sha256-awQsJ\/WxYhouHPuE+i3eJqjA4XClQlr2rD6nKvW80ww=",
+      "url": "_framework\/dotnet.6.0.1.jumy5461sl.js"
+    },
+    {
+      "hash": "sha256-bxECtWW45VwGuhtEvznFHHDNj4dgblnpcjcqKR44GgE=",
+      "url": "_framework\/dotnet.wasm"
+    },
+    {
+      "hash": "sha256-m7vTMvi+UUsSzhlwzsfzIPlK8R1VowNEGEk3dFf4CWI=",
       "url": "_framework\/blazor.boot.json"
     },
     {
-      "hash": "sha256-O59l1GmHIL0brPtpLTn9HYa9NkhR2BtIJS8Os74oZXA=",
+      "hash": "sha256-mRtehYdOTy9HehXWGdTRHsCqwkHjWCfFelAA6Gs\/tJQ=",
       "url": "_framework\/CairoMetro.dll"
     },
     {
@@ -113,15 +121,7 @@
       "url": "_framework\/System.Text.Json.dll"
     },
     {
-      "hash": "sha256-C3LRebbkf4d+fTMoh2k9KgB1Vo+mm17ju0EOUaaxoDo=",
-      "url": "_framework\/dotnet.6.0.1.2n3hd1in0o.js"
-    },
-    {
-      "hash": "sha256-12Gz6Qx1rfye5VN7gKhhZ2+IvJi8CKU6FGm1TcqM2L0=",
-      "url": "_framework\/dotnet.wasm"
-    },
-    {
-      "hash": "sha256-Pqhl1JO4sO3QgkKdCiTrN491m0wW7xKwf27G3dRuofs=",
+      "hash": "sha256-ev4EvtF2xwtpS6hyVEjY\/DGobB5x0vC605c\/O8jkfsM=",
       "url": "CairoMetro.styles.css"
     },
     {
@@ -201,5 +201,5 @@
       "url": "UpdatedMetroMap.png"
     }
   ],
-  "version": "Xb5HCb4q"
+  "version": "ItezKtLE"
 };

@@ -7,7 +7,7 @@
   "linkerEnabled": true,
   "resources": {
     "assembly": {
-      "CairoMetro.dll": "sha256-O59l1GmHIL0brPtpLTn9HYa9NkhR2BtIJS8Os74oZXA=",
+      "CairoMetro.dll": "sha256-mRtehYdOTy9HehXWGdTRHsCqwkHjWCfFelAA6Gs\/tJQ=",
       "Microsoft.AspNetCore.Components.dll": "sha256-\/EKhkfR\/Af\/ocVQW+zo7Tupz05Vi8OWPyZlzZxO8iZ4=",
       "Microsoft.AspNetCore.Components.Web.dll": "sha256-h0pWlwk4NOeB183NzonsZs7kAmnC3unKpI+MS1Z4ibo=",
       "Microsoft.AspNetCore.Components.WebAssembly.dll": "sha256-sQ5VN+hOzznil\/QAd3gBqyCEk\/bF3lJG8uPHbpRYEBM=",
@@ -39,8 +39,8 @@
     "libraryInitializers": null,
     "pdb": null,
     "runtime": {
-      "dotnet.6.0.1.2n3hd1in0o.js": "sha256-C3LRebbkf4d+fTMoh2k9KgB1Vo+mm17ju0EOUaaxoDo=",
-      "dotnet.wasm": "sha256-12Gz6Qx1rfye5VN7gKhhZ2+IvJi8CKU6FGm1TcqM2L0="
+      "dotnet.6.0.1.jumy5461sl.js": "sha256-awQsJ\/WxYhouHPuE+i3eJqjA4XClQlr2rD6nKvW80ww=",
+      "dotnet.wasm": "sha256-bxECtWW45VwGuhtEvznFHHDNj4dgblnpcjcqKR44GgE="
     },
     "satelliteResources": null
   }
