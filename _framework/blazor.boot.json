@@ -7,7 +7,7 @@
   "linkerEnabled": true,
   "resources": {
     "assembly": {
-      "CairoMetro.dll": "sha256-mRtehYdOTy9HehXWGdTRHsCqwkHjWCfFelAA6Gs\/tJQ=",
+      "CairoMetro.dll": "sha256-O3jg8tbNsMn6yXwCP3UtZYUgRBP\/B8x\/DZ7YNKb6L9o=",
       "Microsoft.AspNetCore.Components.dll": "sha256-\/EKhkfR\/Af\/ocVQW+zo7Tupz05Vi8OWPyZlzZxO8iZ4=",
       "Microsoft.AspNetCore.Components.Web.dll": "sha256-h0pWlwk4NOeB183NzonsZs7kAmnC3unKpI+MS1Z4ibo=",
       "Microsoft.AspNetCore.Components.WebAssembly.dll": "sha256-sQ5VN+hOzznil\/QAd3gBqyCEk\/bF3lJG8uPHbpRYEBM=",
