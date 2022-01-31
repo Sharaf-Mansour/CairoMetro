@@ -17,11 +17,11 @@ public static class Loaders
     public static Span<Station> Map => new Station[]
     {
         new(19, "Sadat", Line.Line2, "top:50.47%; left:49.04%;",true),
-        new(21, "Ataba", Line.Line3, "top:45.40%; left:19.50%;",true),
-        new(22, "Al-Shohadaa", Line.Line2, "top:42.73%; left:49.04%;",true),
-        new(19, "Sadat", Line.Line1, "top:50.47%; left:49.04%;",true),
         new(21, "Ataba", Line.Line2, "top:45.40%; left:19.50%;",true),
-        new(22, "Al-Shohadaa", Line.Line1, "top:42.73%; left:49.04%;",true),  
+        new(22, "Al-Shohadaa", Line.Line2, "top:42.73%; left:49.04%;",true),
+       // new(19, "Sadat", Line.Line1, "top:50.47%; left:49.04%;",true),
+        //new(21, "Ataba", Line.Line2, "top:45.40%; left:19.50%;",true),
+        //new(22, "Al-Shohadaa", Line.Line1, "top:42.73%; left:49.04%;",true),  
            
         //Shwitchers
 
