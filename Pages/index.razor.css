@@ -69,6 +69,6 @@ body {
     border-color: red;
 }
 
-.blue:before {
-    border-color: blue;
+.yellow:before {
+    border-color: yellow;
 }
