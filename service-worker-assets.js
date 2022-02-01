@@ -13,15 +13,15 @@
       "url": "_framework\/dotnet.wasm"
     },
     {
-      "hash": "sha256-I7ax2ltQlQ8wqnHFrkSAYStXQaHMJHXPPCiJMhtvDns=",
+      "hash": "sha256-BzDKeEL+0Eyn7tCaLFtWajbgaRZYIPy9C0Ftn0XacB4=",
       "url": "_framework\/blazor.boot.json"
     },
     {
-      "hash": "sha256-I2BNPaaGroamxI5m25EUk9IStluzuxn66TNsHVl50Ag=",
+      "hash": "sha256-u66R9qpt6nkRDPyC3U7hiVicBPbvq\/SPfqJxWV4c68M=",
       "url": "_framework\/CairoMetro.dll"
     },
     {
-      "hash": "sha256-\/EKhkfR\/Af\/ocVQW+zo7Tupz05Vi8OWPyZlzZxO8iZ4=",
+      "hash": "sha256-dExRB6F58+lI01bdKMnw3tSFFb5bhovgutbPxHnuXME=",
       "url": "_framework\/Microsoft.AspNetCore.Components.dll"
     },
     {
@@ -109,7 +109,7 @@
       "url": "_framework\/System.Runtime.CompilerServices.Unsafe.dll"
     },
     {
-      "hash": "sha256-01terrh7zkzSl2QDImosfcTkXkIl7mMxJIkHnMekiQM=",
+      "hash": "sha256-8WU84ilPuP0rQXSm2U3LPSsUVy7UXCZamMY\/oAhR6bI=",
       "url": "_framework\/System.Runtime.dll"
     },
     {
@@ -201,5 +201,5 @@
       "url": "UpdatedMetroMap.png"
     }
   ],
-  "version": "PKAfunBW"
+  "version": "2H0c7g3H"
 };
