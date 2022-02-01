@@ -41,15 +41,15 @@
                 Math.Abs(CurrentStatin.ID - switcher2);
 
                 int Count2 = CurrentStatin.Line is Line.Line1 ?
-                Math.Abs(item.ID - switcher2)  :
+                Math.Abs(item.ID - switcher2) :
                 Math.Abs(item.ID - switcher1);
                 Count = Count1 + Count2 + SwitchCount;
             }
-            <button @onclick="()=> Click(item)" type="button" class="look__hotspot absolute-possitioned @(Count < 9 ? "yellow" : Count < 16 ?  "green" : "red" )" style="@item.Style" @onmouseover="(MouseEventArgs e) => MouseOver(e,item)" @onmouseout="MouseOut"></button>
+            <button @onclick="()=> Click(item)" type="button" class="look__hotspot absolute-possitioned @(Count < 9 ? "yellow" : Count < 16 ?  "green" : "red" )" style="@item.Style" @onmouseover="() => MouseOver(item)" @onmouseout="MouseOut"></button>
         }
         else
         {
-            <button @onclick="()=> Click(item)" type="button" class="look__hotspot absolute-possitioned" style="@item.Style" @onmouseover="(MouseEventArgs e) => MouseOver(e,item)" @onmouseout="MouseOut"></button>
+            <button @onclick="()=> Click(item)" type="button" class="look__hotspot absolute-possitioned" style="@item.Style" @onmouseover="() => MouseOver(item)" @onmouseout="MouseOut"></button>
         }
     }
 </div>

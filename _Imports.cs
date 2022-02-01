@@ -1,19 +1,11 @@
 ﻿global using Microsoft.AspNetCore.Components.Web;
 global using Microsoft.AspNetCore.Components.WebAssembly.Hosting;
 global using CairoMetro;
-global using System.Collections.Generic;
 global using System;
-global using System.Text.RegularExpressions;
-global using System.Text.Json;
-global using Microsoft.AspNetCore.Components.Forms;
-global using Microsoft.AspNetCore.Components;
-global using System.Net.Http.Json;
 global using CairoMetro.Model;
-
 namespace CairoMetro;
 public static class Loaders
 {
-
     public static Span<Station> Map => new Station[]
     {
         new(19, "Sadat", Line.Line2, "top:50.47%; left:49.04%;",true),
@@ -21,8 +13,7 @@ public static class Loaders
         new(22, "Al-Shohadaa", Line.Line2, "top:42.73%; left:49.04%;",true),
        // new(19, "Sadat", Line.Line1, "top:50.47%; left:49.04%;",true),
         //new(21, "Ataba", Line.Line2, "top:45.40%; left:19.50%;",true),
-        //new(22, "Al-Shohadaa", Line.Line1, "top:42.73%; left:49.04%;",true),  
-           
+        //new(22, "Al-Shohadaa", Line.Line1, "top:42.73%; left:49.04%;",true),         
         //Shwitchers
 
         new(1, "Helwan", Line.Line1, "top:96.88%; left:66.33%;"),
@@ -98,6 +89,5 @@ public static class Loaders
         new(19, "El Geish", Line.Line3, "top:40.02%; left:05.57%;"),
         new(20, "Bab El Shaaria", Line.Line3, "top:42.53%; left:05.57%;"),
         //Line THREE Complete
-
     };
 }

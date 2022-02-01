@@ -5,6 +5,6 @@ public partial class Index
 
     bool clicked = false;
     void Click(Station item) => (CurrentStatin, clicked) = CurrentStatin != item ? (item, true) : (CurrentStatin, !clicked);
-    void MouseOver(MouseEventArgs e, Station item) => CurrentStatin = clicked ? CurrentStatin : item;
-    void MouseOut(MouseEventArgs e) => CurrentStatin = clicked ? CurrentStatin : null;
+    void MouseOver(Station item) => CurrentStatin = clicked ? CurrentStatin : item;
+    void MouseOut() => CurrentStatin = clicked ? CurrentStatin : null;
 }
