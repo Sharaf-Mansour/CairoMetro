@@ -29,9 +29,12 @@
             }
             @if (CurrentStatin.Line is Line.Line3 && item.Line is Line.Line1 || item.Line is Line.Line3 && CurrentStatin.Line is Line.Line1)
             {
+
+                //shohda number = 22
+                //attaba number = 21
                 int switcher1 = CurrentStatin.Line is Line.Line1 ?
-                CurrentStatin.ID >= 21 ? 22 : 19 :
-                item.ID >= 21 ? 22 : 19;
+                CurrentStatin.ID >= 21 ? 22 : 20 :
+                item.ID >= 21 ? 22 : 20;
                 int switcher2 = 21;
 
                 int SwitchCount = Math.Abs(switcher2 - switcher1);
@@ -43,6 +46,7 @@
                 int Count2 = CurrentStatin.Line is Line.Line1 ?
                 Math.Abs(item.ID - switcher2) :
                 Math.Abs(item.ID - switcher1);
+
                 Count = Count1 + Count2 + SwitchCount;
             }
             <button @onclick="()=> Click(item)" type="button" class="look__hotspot absolute-possitioned @(Count < 9 ? "yellow" : Count < 16 ?  "green" : "red" )" style="@item.Style" @onmouseover="() => MouseOver(item)" @onmouseout="MouseOut"></button>
