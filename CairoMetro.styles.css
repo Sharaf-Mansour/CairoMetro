@@ -1,13 +1,13 @@
 /* /Pages/index.razor.rz.scp.css */
 .look__hotspot[b-sne0p5jimm] {
-    width: 25px;
-    height: 25px;
+    width: 50px;
+    height: 50px;
     display: block;
-    background-color: rgba(0, 0, 0, 0.5);
-    border-radius: 50%;
+    background-color: transparent;
     box-sizing: border-box;
-    border: 5px solid  ;
-    /* outer */
+    border: 5px solid transparent;
+    border-radius: 50%;
+     /* outer */
     /* hit area */
 }
 
@@ -17,6 +17,7 @@
         content: "";
         display: block;
         box-sizing: border-box;
+        background-color: white;
         border: 13px solid rgba(0, 0, 0, 0.2);
         border-radius: 50%;
         width: 50px;
