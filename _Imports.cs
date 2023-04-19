@@ -82,9 +82,9 @@ public static class Loaders
         new(24, "Abdou Pasha", Line.Line3, "top:37.3%; left:4.55%;"),
         new(23, "El Geish", Line.Line3, "top:39.7%; left:4.55%;"),
         new(22, "Bab El Shaaria", Line.Line3, "top:42.2%; left:4.55%;"),
-        new(19, "Bab El Shaaria", Line.Line3, "top:50%; left:4.55%;"),
-        new(18, "Bab El Shaaria", Line.Line3, "top:52%; left:4.55%;"),
-        new(17, "Bab El Shaaria", Line.Line3, "top:54.5%; left:4.55%;")
+        new(19, "Maspero", Line.Line3, "top:50%; left:4.55%;"),
+        new(18, "Safaa Hijazy", Line.Line3, "top:52%; left:4.55%;"),
+        new(17, "Kit-Kat", Line.Line3, "top:54.5%; left:4.55%;")
         //Line THREE Complete
     };
 }
