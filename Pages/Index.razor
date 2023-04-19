@@ -49,11 +49,11 @@
 
                 Count = Count1 + Count2 + SwitchCount;
             }
-            <button @onclick="()=> Click(item)" type="button" class="look__hotspot absolute-possitioned @(Count < 9 ? "yellow" : Count < 16 ?  "green" : "red" )" style="@item.Style" @onmouseover="() => MouseOver(item)" @onmouseout="MouseOut"></button>
+            <button title="@item.Name" id="@(item.Name)" @onclick="()=> Click(item)" type="button" class="look__hotspot absolute-possitioned @(Count < 9 ? "yellow" : Count < 16 ?  "green" : "red" )" style="@item.Style" @onmouseover="() => MouseOver(item)" @onmouseout="MouseOut"></button>
         }
         else
         {
-            <button @onclick="()=> Click(item)" type="button" class="look__hotspot absolute-possitioned" style="@item.Style" @onmouseover="() => MouseOver(item)" @onmouseout="MouseOut"></button>
+            <button title="@item.Name" id="@(item.Name)" @onclick="()=> Click(item)" type="button" class="look__hotspot absolute-possitioned" style="@item.Style" @onmouseover="() => MouseOver(item)" @onmouseout="MouseOut"></button>
         }
     }
 </div>
