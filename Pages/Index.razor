@@ -10,7 +10,7 @@
             {
                 Count = Math.Abs(CurrentStatin.ID - item.ID);
             }
-            @if (CurrentStatin.Line is Line.Line1 && item.Line is Line.Line2 || item.Line is Line.Line1 && CurrentStatin.Line is Line.Line2)
+            @if ((CurrentStatin.Line, item.Line) is (Line.Line1, Line.Line2) or (Line.Line2, Line.Line1))
             {
                 int switcher = CurrentStatin.ID >= 20 && item.ID > 21 ? 22 :
                 CurrentStatin.ID >= 21 && item.ID < 20 ? 19 :
@@ -20,40 +20,44 @@
                 int Count2 = Math.Abs(item.ID - switcher);
                 Count = Count1 + Count2;
             }
-            @if (CurrentStatin.Line is Line.Line3 && item.Line is Line.Line2 || item.Line is Line.Line3 && CurrentStatin.Line is Line.Line2)
+            @if ((CurrentStatin.Line, item.Line) is (Line.Line3, Line.Line2) or (Line.Line2, Line.Line3))
             {
                 int switcher = 21;
                 int Count1 = Math.Abs(CurrentStatin.ID - switcher);
                 int Count2 = Math.Abs(item.ID - switcher);
                 Count = Count1 + Count2;
             }
-            @if (CurrentStatin.Line is Line.Line3 && item.Line is Line.Line1 || item.Line is Line.Line3 && CurrentStatin.Line is Line.Line1)
+             @if ((CurrentStatin.Line, item.Line) is (Line.Line3, Line.Line1) or (Line.Line1, Line.Line3))
             {
-
-                //shohda number = 22
-                //attaba number = 21
                 int switcher1 = CurrentStatin.Line is Line.Line1 ?
                 CurrentStatin.ID >= 21 ? 22 : 20 :
                 item.ID >= 21 ? 22 : 20;
                 int switcher2 = 21;
-
                 int SwitchCount = Math.Abs(switcher2 - switcher1);
-
                 int Count1 = CurrentStatin.Line is Line.Line1 ?
                 Math.Abs(CurrentStatin.ID - switcher1) :
                 Math.Abs(CurrentStatin.ID - switcher2);
-
                 int Count2 = CurrentStatin.Line is Line.Line1 ?
                 Math.Abs(item.ID - switcher2) :
                 Math.Abs(item.ID - switcher1);
-
                 Count = Count1 + Count2 + SwitchCount;
             }
-            <button title="@item.Name" id="@(item.Name)" @onclick="()=> Click(item)" type="button" class="look__hotspot absolute-possitioned @(Count < 9 ? "yellow" : Count < 16 ?  "green" : "red" )" style="@item.Style" @onmouseover="() => MouseOver(item)" @onmouseout="MouseOut"></button>
+            <button title='@item.Name - @(Count is 0 ? "You are here!" : "" )' id="@(item.Name)" @onclick="()=> Click(item)"
+                type="button"
+                class="look__hotspot absolute-possitioned @(Count is 0 ? "black" : Count < 9 ? "yellow" : Count < 16 ?  "green" :  "red" )"
+                style="@item.Style" @onmouseover="() => MouseOver(item)" @onmouseout="MouseOut"></button>
+            <label for="@(item.Name)" style=" @item.Style   position: absolute; font-size:30px">
+                <br>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; @item.Name</label>
         }
         else
         {
-            <button title="@item.Name" id="@(item.Name)" @onclick="()=> Click(item)" type="button" class="look__hotspot absolute-possitioned" style="@item.Style" @onmouseover="() => MouseOver(item)" @onmouseout="MouseOut"></button>
+            <button title="@item.Name" id="@(item.Name)" @onclick="()=> Click(item)" type="button"
+                class="look__hotspot absolute-possitioned " style='@item.Style' @onmouseover="() => MouseOver(item)"
+            @onmouseout="MouseOut"></button>
+            <label for="@(item.Name)" style=" @item.Style   position: absolute; font-size:30px">
+                <br>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; @item.Name</label>
         }
     }
 </div>
