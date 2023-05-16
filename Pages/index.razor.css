@@ -55,7 +55,7 @@ body {
 .image-container {
     position: relative;
     display: inline-block;
-}
+ }
 
 .absolute-possitioned {
     position: absolute;
@@ -72,4 +72,7 @@ body {
 
 .yellow:before {
     border-color: yellow;
+}
+.black:before {
+    border-color: black;
 }
