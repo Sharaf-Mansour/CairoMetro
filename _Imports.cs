@@ -8,10 +8,10 @@ public static class Loaders
 {
     public static Span<Station> Map => new Station[]
     {
-        new(19, "Sadat", Line.Line2, "top:50.2%; left:47.95%;", true),
+        new(19, "Sadat", Line.Line2, "top:50.75%; left:47.95%;", true),
         new(21, "Ataba", Line.Line3, "top:45.1%; left:18.7%;", true),
-        new(22, "Al-Shohadaa", Line.Line2, "top:42.5%; left:48%;", true),
-        new(20, "Nasser", Line.Line1, "top:48.35%; left:30.9%;", true),
+        new(22, "Al-Shohadaa", Line.Line2, "top:42.5%; left:45%;", true),
+        new(20, "Nasser", Line.Line1, "top:48.35%; left:36.2%;", true),
         // Switchers complete
         new(1, "Helwan", Line.Line1, "top:96.7%; left:65.45%;"),
         new(2, "Ain Helwan", Line.Line1, "top:94.65%; left:65.45%;"),
@@ -55,7 +55,7 @@ public static class Loaders
         new(16, "El Bohoth", Line.Line2, "top:58.6%; left:36.2%;"),
         new(17, "Dokki", Line.Line2, "top:55.7%; left:36.2%;"),
         new(18, "Opera", Line.Line2, "top:52.8%; left:36.2%;"),
-        new(20, "Mohamed Naguib", Line.Line2, "top:46.8%; left:36.2%;"),
+        new(20, "Mohamed Naguib", Line.Line2, "top:46.5%; left:36.2%;"),
         new(23, "Masarra", Line.Line2, "top:39.7%; left:36.2%;"),
         new(24, "Rod El-Farag", Line.Line2, "top:36.8%; left:36.2%;"),
         new(25, "St. Teresa", Line.Line2, "top:34%; left:36.2%;"),
