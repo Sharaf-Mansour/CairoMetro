@@ -13,11 +13,11 @@
       "url": "_framework\/dotnet.wasm"
     },
     {
-      "hash": "sha256-pHgjfrRi8S3LBs\/ivNpMqu9znl5RalLYxMoczR2ZYXk=",
+      "hash": "sha256-Fw7tEBrbv56agLewosNi3xPANaw3u9PdererkVw616o=",
       "url": "_framework\/blazor.boot.json"
     },
     {
-      "hash": "sha256-XgrKIuZ7cNXqje7kSJO5xyXQUSJDQBOZYyPzDM1YxwU=",
+      "hash": "sha256-3CJZi2RdpFT70OUywzyajeQWQrSbpPLSGAhFU22FCgU=",
       "url": "_framework\/CairoMetro.dll"
     },
     {
@@ -121,7 +121,7 @@
       "url": "_framework\/System.Text.Json.dll"
     },
     {
-      "hash": "sha256-A5D71\/HD50vb5I6ZUXdyxKj3W4TGoYHMTivWEEHflts=",
+      "hash": "sha256-s3y\/pa\/9WgR+kZ7LTZn0NR3awi0g18qHoza7HW3eQks=",
       "url": "CairoMetro.styles.css"
     },
     {
@@ -197,9 +197,9 @@
       "url": "manifest.webmanifest"
     },
     {
-      "hash": "sha256-vbcmyCiGQ0+KV3KaDbmD6vZsaHGmvqM4bvelEUxbW5k=",
+      "hash": "sha256-m+bHO5Z\/m3t79g81dIgobK15wSJ6oXGV6t0xputCpyw=",
       "url": "UpdatedMetroMap.png"
     }
   ],
-  "version": "uVC+LPR\/"
+  "version": "4hh26RgM"
 };

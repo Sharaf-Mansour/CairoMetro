@@ -56,7 +56,7 @@ body[b-sne0p5jimm] {
 .image-container[b-sne0p5jimm] {
     position: relative;
     display: inline-block;
-}
+ }
 
 .absolute-possitioned[b-sne0p5jimm] {
     position: absolute;
@@ -73,4 +73,7 @@ body[b-sne0p5jimm] {
 
 .yellow[b-sne0p5jimm]:before {
     border-color: yellow;
+}
+.black[b-sne0p5jimm]:before {
+    border-color: black;
 }
