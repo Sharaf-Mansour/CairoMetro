@@ -6,8 +6,7 @@ global using CairoMetro.Model;
 namespace CairoMetro;
 public static class Loaders
 {
-    public static Span<Station> Map => new Station[]
-    {
+    public static Station[] Map =>  [
         new(19, "Sadat", Line.Line2, "top:50.75%; left:47.95%;", true),
         new(21, "Ataba", Line.Line3, "top:45.1%; left:18.7%;", true),
         new(22, "Al-Shohadaa", Line.Line2, "top:42.5%; left:45%;", true),
@@ -85,6 +84,5 @@ public static class Loaders
         new(19, "Maspero", Line.Line3, "top:50%; left:4.55%;"),
         new(18, "Safaa Hijazy", Line.Line3, "top:52%; left:4.55%;"),
         new(17, "Kit-Kat", Line.Line3, "top:54.5%; left:4.55%;")
-        //Line THREE Complete
-    };
+    ];
 }
