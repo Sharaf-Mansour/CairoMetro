@@ -7,14 +7,12 @@
     box-sizing: border-box;
     border: 5px solid transparent;
     border-radius: 50%;
-     /* outer */
-    /* hit area */
+    color: black;
 }
 
-
-
     .look__hotspot[b-sne0p5jimm]::before {
-        content: "";
+        content: attr(data-content);
+        padding: 5px;
         display: block;
         box-sizing: border-box;
         background-color: white;
@@ -69,11 +67,11 @@ body[b-sne0p5jimm] {
 
 .red[b-sne0p5jimm]:before {
     border-color: red;
-}
+ }
 
 .yellow[b-sne0p5jimm]:before {
     border-color: yellow;
-}
+ }
 .black[b-sne0p5jimm]:before {
     border-color: black;
-}
+ }
