@@ -1,6 +1,8 @@
 // Caution! Be sure you understand the caveats before publishing an application with
 // offline support. See https://aka.ms/blazor-offline-considerations
 self.importScripts('./service-worker-assets.js');
+let XX1 = document.getElementById('XX1');
+
 async function onFetch(event) {
     let cachedResponse = null;
     if (event.request.method === 'GET') {
