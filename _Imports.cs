@@ -83,6 +83,12 @@ public static class Loaders
         new(22, "Bab El Shaaria", Line3, "top:42.2%; left:4.55%;"),
         new(19, "Maspero", Line3, "top:50%; left:4.55%;"),
         new(18, "Safaa Hijazy", Line3, "top:52%; left:4.55%;"),
-        new(17, "Kit-Kat", Line3, "top:54.5%; left:4.55%;")
+        new(17, "Kit-Kat", Line3, "top:54.5%; left:4.55%;"),
+        new(16, "Sudan", Line3, "top:56.7%; left:4.55%;"),
+        new(15, "Imbaba", Line3, "top:59.25%; left:4.55%;"),
+        new(14, "El-Bohy", Line3, "top:61.5%; left:4.55%;"),
+        new(13, "El-Qawmia", Line3, "top:64%; left:4.55%;"),
+        new(12, "Ring Road", Line3, "top:67%; left:4.55%;"),
+        new(11, "Rod El Fara Corridor", Line3, "top:70%; left:4.55%;"),
     ];
 }

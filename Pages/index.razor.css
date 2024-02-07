@@ -71,6 +71,9 @@ body {
 .yellow:before {
     border-color: yellow;
  }
+.blue:before {
+    border-color: blue;
+}
 .black:before {
     border-color: black;
  }

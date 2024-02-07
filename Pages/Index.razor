@@ -46,7 +46,7 @@
         }
         <button data-content="@item.ID" title='@item.Name - @(Count is 0 ? "You are here!" : "" )' id="@(item.Name)" @onclick="()=> Click(item)"
                 type="button"
-                class="look__hotspot absolute-possitioned @(Count is 0 ? "black" : Count < 9 ? "yellow" : Count < 16 ?  "green" :  "red" )"
+                class="look__hotspot absolute-possitioned @(Count is 0 ? "black" : Count < 9 ? "yellow" : Count < 16 ?  "green" : Count < 23 ?  "red" : "blue" )"
                 style="@item.Style" @onmouseover="() => MouseOver(item)" @onmouseout="MouseOut"></button>
         <label for="@(item.Name)" style=" @item.Style   position: absolute; font-size:30px">
             <br>
