@@ -15,8 +15,8 @@
 </head>
 
 <body>
-
-    <div id="app">
+    <button id="XX1" style="z-index:9999">Download</button>
+     <div id="app">
         <div class="spin-container">
             <div class="loderimg">
                 <img src="icon-512.png" width="250px" height="250px" style="z-index: 1;" alt="LOADING...">
@@ -26,6 +26,35 @@
         </div>
     </div>
     <script type="text/javascript" integrity="">
+
+        let deferredPrompt;
+
+        window.addEventListener('beforeinstallprompt', (event) => {
+            event.preventDefault();
+            deferredPrompt = event;
+
+            // You may choose to display a custom install button here.
+            // For simplicity, we'll assume there's an install button with the ID 'XX1'.
+            document.getElementById('XX1').style.display = 'block';
+        });
+
+        // Assume 'XX1' is the ID of the install button.
+        document.getElementById('XX1').addEventListener('click', () => {
+            if (deferredPrompt) {
+                deferredPrompt.prompt();
+                deferredPrompt.userChoice.then((choiceResult) => {
+                    if (choiceResult.outcome === 'accepted') {
+                        console.log('User accepted the install prompt');
+                    } else {
+                        console.log('User dismissed the install prompt');
+                    }
+                    deferredPrompt = null;
+                });
+            }
+        });
+
+
+
         (function (l) {
             if (l.search) {
                 var q = {};
