@@ -1,7 +1,7 @@
 {
   "mainAssemblyName": "CairoMetro",
   "resources": {
-    "hash": "sha256-ltf5RhQ+YP0Xi1gKMatB6zQVSQiSEyTOHFYHzV1jH7A=",
+    "hash": "sha256-4CwRhHRovfX9qqaudplaZbX0GQBhYp7R3zRLmIReq5w=",
     "jsModuleNative": {
       "dotnet.native.8.0.1.ahpp78valh.js": "sha256-SGOlISx+3G4kkvpC9Uq3qoPGsnjxGmW61QBev0lyI5U="
     },
@@ -12,7 +12,7 @@
       "dotnet.native.wasm": "sha256-dqpunZywlYy86b4O6ZjONasmG+4FH0P17FZ0OIf/lIg="
     },
     "assembly": {
-      "CairoMetro.wasm": "sha256-DtFBJlJvqtOMEsNHq2Gxma+KL/hysk5BP6ugWTfantE=",
+      "CairoMetro.wasm": "sha256-vCfmk4AhR8jmxpvratQL6UJZ34BDmGj9scte8uNmVoQ=",
       "Microsoft.AspNetCore.Components.wasm": "sha256-6Jk/ycR4DiieB5gi7xOyb6Tyt8mQ0zLTFTAD8LKILp0=",
       "Microsoft.AspNetCore.Components.Web.wasm": "sha256-wItY8Sz4AkM58VaecbLzDooiyfGwRtIgmFiZ4Vo2AoI=",
       "Microsoft.AspNetCore.Components.WebAssembly.wasm": "sha256-uj0+GfO/MiJL7No1muhgbrMMPoeEmzJek3g/Lm/+HZQ=",
