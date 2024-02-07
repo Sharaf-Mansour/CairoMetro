@@ -104,7 +104,25 @@ label {
     -o-border-radius: 50%;
     z-index: 1;
 }
+#XX1 {
+    background-color: #4CAF50; /* Green background color */
+    border: none; /* Remove border */
+    color: white; /* White text color */
+    padding: 15px 32px; /* Add padding */
+    text-align: center; /* Center text */
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px; /* Set font size */
+    margin: 10px; /* Add margin */
+    cursor: pointer; /* Add a pointer cursor on hover */
+    border-radius: 8px; /* Add rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add a subtle box shadow */
+    transition: background-color 0.3s ease; /* Add a smooth transition effect */
+}
 
+    #XX1:hover {
+        background-color: #45a049; /* Darker green on hover */
+    }
 .loader:after {
     content: '';
     position: relative;
