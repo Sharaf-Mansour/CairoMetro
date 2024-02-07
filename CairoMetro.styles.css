@@ -72,6 +72,9 @@ body[b-sne0p5jimm] {
 .yellow[b-sne0p5jimm]:before {
     border-color: yellow;
  }
+.blue[b-sne0p5jimm]:before {
+    border-color: blue;
+}
 .black[b-sne0p5jimm]:before {
     border-color: black;
  }
