@@ -29,6 +29,7 @@ async function onInstall(event) {
         .map(asset => new Request(asset.url, { integrity: asset.hash, cache: 'no-cache' }));
     await caches.open(cacheName).then(cache => cache.addAll(assetsRequests));
     self.skipWaiting();
+    XX1.style.display = 'none';
 }
 async function onActivate(event) {
     console.info('Service worker: Activate');
