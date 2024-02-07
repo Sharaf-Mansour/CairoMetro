@@ -29,6 +29,7 @@ async function onInstall(event) {
         .map(asset => new Request(asset.url, { integrity: asset.hash, cache: 'no-cache' }));
     await caches.open(cacheName).then(cache => cache.addAll(assetsRequests));
     self.skipWaiting();
+    XX1.style.display = 'none';
 }
 async function onActivate(event) {
     console.info('Service worker: Activate');
@@ -37,4 +38,4 @@ async function onActivate(event) {
     await Promise.all(cacheKeys
         .filter(key => key.startsWith(cacheNamePrefix) && key !== cacheName)
         .map(key => caches.delete(key)));
-}/* Manifest version: iNZZ77hG */
+}/* Manifest version: 700/4G+j */
