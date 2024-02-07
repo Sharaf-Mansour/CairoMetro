@@ -15,7 +15,7 @@
 </head>
 
 <body>
-    <button id="XX1" style="z-index:9999">Download</button>
+    <button id="installButton" style="z-index:9999">Download</button>
      <div id="app">
         <div class="spin-container">
             <div class="loderimg">
@@ -28,25 +28,47 @@
     <script type="text/javascript" integrity="">
 
         let deferredPrompt;
-        let XX1 = document.getElementById('XX1');
+        let installButton = document.getElementById('installButton');
+  
         window.addEventListener('beforeinstallprompt', (event) => {
             event.preventDefault();
             deferredPrompt = event;
+            installButton.hidden = false;
+            installButton.addEventListener("click", installApp);
         });
+        //check if event exists beforeinstallprompt
+        if (window.matchMedia('(display-mode: standalone)').matches) {
+            installButton.hidden = true;
+        }
+        else {
+            installButton.hidden = false;
+        }
+  
+function installApp() {
+    // Show the prompt
+    console.log("PWA setup accepted");
+    deferredPrompt.prompt();
+    installButton.disabled = true;
+  
+    // Wait for the user to respond to the prompt
+    deferredPrompt.userChoice.then(choiceResult => {
+      if (choiceResult.outcome === "accepted") {
+        console.log("PWA setup accepted");
+        installButton.hidden = true;
+      } else {
+        console.log("PWA setup rejected");
+      }
+      installButton.disabled = false;
+      deferredPrompt = null;
+    });
+  }
 
-        XX1.addEventListener('click', () => {
-            if (deferredPrompt) {
-                deferredPrompt.prompt();
-                deferredPrompt.userChoice.then((choiceResult) => {
-                    if (choiceResult.outcome === 'accepted') {
-                        console.log('User accepted the install prompt');
-                    } else {
-                        console.log('User dismissed the install prompt');
-                    }
-                    deferredPrompt = null;
-                });
-            }
-        });
+  window.addEventListener("appinstalled", evt => {
+    console.log("appinstalled fired", evt);
+  });
+
+ 
+
 
         (function (l) {
             if (l.search) {
