@@ -21,11 +21,11 @@
       "url": "_framework\/dotnet.runtime.8.0.7.1xq9ky4qkq.js"
     },
     {
-      "hash": "sha256-tL2qGf8lG0HLOggHKK4OdN7iCtYqQl5whvLRpMBnL9U=",
+      "hash": "sha256-RklgzR0cORF\/iaNEy\/yH02H+uKQRm6DpeEnjTSLI\/cw=",
       "url": "_framework\/blazor.boot.json"
     },
     {
-      "hash": "sha256-6GJbSWvGxJmWUo3TwDBKXbrgSYQcCkxu6g6rVUHwGNg=",
+      "hash": "sha256-q4J443crajNYGlDgnkgs7GT+FmoAmQCtHC\/Wlmg8\/nk=",
       "url": "_framework\/CairoMetro.wasm"
     },
     {
@@ -169,9 +169,9 @@
       "url": "manifest.webmanifest"
     },
     {
-      "hash": "sha256-S+UInui72AJaJZ2INBFuu4+8NAWLWk3u\/BA4TwvcHBA=",
+      "hash": "sha256-rOSHkKNxTj4kC3veeEYTNDQGbsU2SZ3rGnNRE3uRjwM=",
       "url": "UpdatedMetroMap.png"
     }
   ],
-  "version": "PqvxrCI7"
+  "version": "MAK5PnFn"
 };
